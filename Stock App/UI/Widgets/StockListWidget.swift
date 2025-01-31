@@ -19,7 +19,6 @@ struct StockListWidget: View {
             List {
                 ForEach(stocks.stocks) { item in
                     
-                    //let data = item.data
                     StockCell(vm: StockCellViewModel(name: item.name, ticker: item.id, currentPrice: item.currentPrice))
                     
                         .padding([.leading, .trailing],-config.padding)
@@ -41,7 +40,7 @@ struct StockListWidget: View {
                         .resizable()
                         .scaledToFit()
                     }
-                .frame(width: geometry.size.width, height: geometry.size.height) // Takes full available space
+                .frame(width: geometry.size.width, height: geometry.size.height)
             }
         }
     }

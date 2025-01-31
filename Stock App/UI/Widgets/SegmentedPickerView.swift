@@ -26,9 +26,8 @@ struct SegmentedPickerView: View {
             }
         }
         .pickerStyle(SegmentedPickerStyle())
-        .background(Color("Lighter")) // Light gray background
-        .cornerRadius(8) // Rounded corners
-        .shadow(color: .black.opacity(0.2), radius: 4, x: 0, y: 2) // Soft shadow
+        .background(Color("Lighter"))
+        .cornerRadius(config.cardCornerRadius)
         .padding(config.quarterPadding)
     }
 }

@@ -24,7 +24,6 @@ class DataService: DataServiceProtocol {
     func getData<T>(url: URL, modelType: T.Type) async throws -> T where T: Decodable {
         
         let encoded = try await client.getData(url: url)
-        //print(data.prettyPrintedJSONString)
         let data = try JSONDecoder().decode(T.self, from: encoded)
         return data
     }

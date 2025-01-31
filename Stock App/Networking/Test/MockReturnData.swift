@@ -93,7 +93,7 @@ class MockReturnData {
         let lowercasedPrefix = prefix.lowercased()
         
         return stocks
-            .filter { $0.name.lowercased().hasPrefix(lowercasedPrefix) } // Match prefix
+            .filter { $0.name.lowercased().hasPrefix(lowercasedPrefix) }
             .sorted { $0.name.lowercased() < $1.name.lowercased() }
     }
     
@@ -101,7 +101,7 @@ class MockReturnData {
         let lowercasedPrefix = prefix.lowercased()
         
         return stocks
-            .filter { $0.id.lowercased().hasPrefix(lowercasedPrefix) } // Match prefix
+            .filter { $0.id.lowercased().hasPrefix(lowercasedPrefix) }
             .sorted { $0.id.lowercased() < $1.id.lowercased() }
     }
 }
