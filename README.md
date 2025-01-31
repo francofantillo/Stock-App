@@ -21,6 +21,7 @@ The app follows the MVVM (Model-View-ViewModel) architecture. There are two view
 One for managing the array of stocks.
 One for holding stock data for each individual cell.
 Services are broken up into StockCache and DataService. Additionally, it's worth mentioning that URLSession has been mocked to properly test the HttpClient.
+I have also broken the main view into several other widgets.
 
 Although there is no navigation in this app, I've laid the groundwork for it in the Stock_App.swift file, which contains a NavigationStack set up to pass the view stack as an environment variable. This makes it easy to add views to the navigation stack via button closures.
 
